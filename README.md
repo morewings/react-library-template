@@ -4,7 +4,7 @@ With React Library Template Repository, you can focus on developing your React c
 
 Read [full documentation](https://github.com/morewings/cra-template-npm-library/wiki).
 
-Visit [Demo Storybook](https://morewings.github.io/cra-template-npm-library).
+Visit [Demo Storybook](https://morewings.github.io/react-library-template/).
 
 ## Features
 

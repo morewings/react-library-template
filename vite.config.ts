@@ -12,13 +12,7 @@ export default defineConfig({
   resolve: {
     alias: hq.get('rollup'),
   },
-  plugins: [
-    react(),
-    {
-      ...dts({rollupTypes: true}),
-      apply: 'build',
-    },
-  ],
+  plugins: [react(), dts({rollupTypes: true})],
   build: {
     lib: {
       // Could also be a dictionary or array of multiple entry points

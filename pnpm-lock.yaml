@@ -29,8 +29,8 @@ devDependencies:
     specifier: 7.6.2
     version: 7.6.2(react-dom@18.2.0)(react@18.2.0)(typescript@5.2.2)(vite@5.0.4)
   '@storybook/test':
-    specifier: 7.6.1
-    version: 7.6.1(@types/jest@29.5.10)(jest@29.7.0)
+    specifier: 7.6.2
+    version: 7.6.2(@types/jest@29.5.10)(jest@29.7.0)
   '@storybook/types':
     specifier: 7.6.1
     version: 7.6.1
@@ -3821,14 +3821,14 @@ packages:
     resolution: {integrity: sha512-FcOqPAXACP0I3oJ/ws6/rrPT9WGhu915Cg8D02a9YxLo0DE9zI+a9A5gRGvmQ09fiWPukqI8ZAEoQEdWUKMQdQ==}
     dev: true
 
-  /@storybook/instrumenter@7.6.1:
-    resolution: {integrity: sha512-Dws1Jj0z/yo91mOPoksyo+WR33ez1wtt83IPE9osRQnDtXSmu4yusfmTS4vd79nyiCqvfuG0F7p8jr7UcEMT2A==}
+  /@storybook/instrumenter@7.6.2:
+    resolution: {integrity: sha512-IQQh0troFy0naXJUc47UtqJ1Bcs4SaBBxxCMlUeJLML1w0EjBSNCB6kewTU/DfjlkFm8a7YnEwxPTEh1dZiq8w==}
     dependencies:
-      '@storybook/channels': 7.6.1
-      '@storybook/client-logger': 7.6.1
-      '@storybook/core-events': 7.6.1
+      '@storybook/channels': 7.6.2
+      '@storybook/client-logger': 7.6.2
+      '@storybook/core-events': 7.6.2
       '@storybook/global': 5.0.0
-      '@storybook/preview-api': 7.6.1
+      '@storybook/preview-api': 7.6.2
       '@vitest/utils': 0.34.6
       util: 0.12.5
     dev: true
@@ -4069,13 +4069,13 @@ packages:
       - supports-color
     dev: true
 
-  /@storybook/test@7.6.1(@types/jest@29.5.10)(jest@29.7.0):
-    resolution: {integrity: sha512-++2nBq25r2OAMHPyN+MduflF5RBjdRXwJyy1aV6OxeXSZazmbbAIg7IOeMmp7aV/W6X8DPP53gu2w/W72On9xg==}
+  /@storybook/test@7.6.2(@types/jest@29.5.10)(jest@29.7.0):
+    resolution: {integrity: sha512-D1+IV514uw749OdgG3bh0cygkZMcP9QhNc4VvOFKYnQ9cHLB95w4+tjuPmmU4KqJIsPNl3cZ/uLai0mZz+mWrw==}
     dependencies:
-      '@storybook/client-logger': 7.6.1
-      '@storybook/core-events': 7.6.1
-      '@storybook/instrumenter': 7.6.1
-      '@storybook/preview-api': 7.6.1
+      '@storybook/client-logger': 7.6.2
+      '@storybook/core-events': 7.6.2
+      '@storybook/instrumenter': 7.6.2
+      '@storybook/preview-api': 7.6.2
       '@testing-library/dom': 9.3.3
       '@testing-library/jest-dom': 6.1.4(@types/jest@29.5.10)(jest@29.7.0)
       '@testing-library/user-event': 14.3.0(@testing-library/dom@9.3.3)

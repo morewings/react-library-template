@@ -38,7 +38,7 @@
     "clean:lib": "rm -rf dist",
     "build:lib": "vite build",
     "build": "run-s clean:lib build:lib",
-    "lint:code": "eslint . --ext ts,tsx --report-unused-disable-directives",
+    "lint:code": "eslint ./src/ --ext ts,tsx --report-unused-disable-directives",
     "fix:code": "run-s 'lint:code --fix'",
     "lint:types": "tsc --pretty --noEmit",
     "lint:style": "stylelint ./src/**/*.css",

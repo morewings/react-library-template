@@ -1,11 +1,14 @@
-import {Counter} from '@/lib';
+import type {FC} from 'react';
 
-function App() {
+import {Counter} from '@/lib';
+import './index.css';
+
+const App: FC = () => {
     return (
         <div>
             <Counter />
         </div>
     );
-}
+};
 
 export default App;

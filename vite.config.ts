@@ -5,6 +5,7 @@ import react from '@vitejs/plugin-react';
 import hq from 'alias-hq';
 import external from '@yelo/rollup-node-external';
 import dts from 'vite-plugin-dts';
+import autoprefixer from 'autoprefixer';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -31,6 +32,13 @@ export default defineConfig({
           react: 'React',
         },
       },
+    },
+  },
+  css: {
+    postcss: {
+      plugins: [
+        autoprefixer({}), // add options if needed
+      ],
     },
   },
 });

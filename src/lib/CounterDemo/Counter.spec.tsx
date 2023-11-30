@@ -25,7 +25,7 @@ describe('lib > Counter', () => {
         expect(asFragment()).toMatchSnapshot();
 
         /** More precise test for counter value */
-        expect((baseElement.querySelector('strong') as HTMLElement).textContent).toBe('6'); // 6 is value we expect, we need to convert Number to String, because HTMLElement textContent method returns string value
+        expect(baseElement.querySelector('strong')!.textContent).toBe('6'); // 6 is value we expect, we need to convert Number to String, because HTMLElement textContent method returns string value
     });
 
     it('changes counter value on button click', () => {
@@ -44,6 +44,6 @@ describe('lib > Counter', () => {
         fireEvent.click(getByRole('button'));
 
         /** Check if counter was incremented  */
-        expect((baseElement.querySelector('strong') as HTMLElement).textContent).toBe(`${value + 1}`);
+        expect(baseElement.querySelector('strong')!.textContent).toBe(`${value + 1}`);
     });
 });

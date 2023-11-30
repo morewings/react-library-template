@@ -1,9 +1,18 @@
 module.exports = {
   root: true,
   env: { browser: true, es2020: true },
+  parserOptions: {
+    ecmaVersion: 'latest',
+    tsconfigRootDir: __dirname,
+    sourceType: 'module',
+    project: './tsconfig.linter.json',
+  },
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/stylistic-type-checked',
+    'plugin:react/recommended',
+    'plugin:react/jsx-runtime',
     'plugin:react-hooks/recommended',
     'plugin:ssr-friendly/recommended',
     'plugin:storybook/recommended',
@@ -45,11 +54,7 @@ module.exports = {
         ],
         pathGroups: [
           {
-            pattern: 'lib/**',
-            group: 'internal',
-          },
-          {
-            pattern: 'environment/**',
+            pattern: '@/**',
             group: 'internal',
           },
         ],
@@ -79,6 +84,10 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
+    '@typescript-eslint/consistent-type-definitions': [
+      'error',
+      'type'
+    ]
   },
   overrides: [
     /* Allow require imports for internal scripts */

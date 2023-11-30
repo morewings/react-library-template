@@ -3,7 +3,10 @@
   "private": false,
   "version": "0.1.0",
   "type": "module",
-  "files": ["dist"],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "main": "./dist/index.umd.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -14,9 +17,27 @@
       "require": "./dist/index.umd.cjs"
     }
   },
+  "keywords": [
+    "react",
+    "template",
+    "react-testing-library",
+    "testing-library",
+    "eslint",
+    "npm",
+    "rollup",
+    "stylelint",
+    "library",
+    "package",
+    "vite",
+    "css-modules",
+    "typescript"
+  ],
+  "description": "Missing React, typescript NPM library creation template",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "clean:lib": "rm -rf dist",
+    "build:lib": "vite build",
+    "build": "run-s clean:lib build:lib",
     "lint:code": "eslint . --ext ts,tsx --report-unused-disable-directives",
     "fix:code": "run-s 'lint:code --fix'",
     "lint:types": "tsc --pretty --noEmit",
@@ -33,7 +54,11 @@
     "react-dom": ">=18.2.0"
   },
   "dependencies": {
-    "lodash": "^4.17.21"
+    "-": "^0.0.1",
+    "D": "^1.0.0",
+    "autoprefixer": "^10.4.16",
+    "lodash": "^4.17.21",
+    "postcss": "^8.4.31"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "7.6.1",
@@ -59,6 +84,7 @@
     "eslint-config-prettier": "8.10.0",
     "eslint-plugin-import": "2.29.0",
     "eslint-plugin-prettier": "5.0.1",
+    "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "4.6.0",
     "eslint-plugin-react-refresh": "0.4.4",
     "eslint-plugin-ssr-friendly": "1.3.0",

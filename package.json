@@ -78,7 +78,7 @@
     "@vitejs/plugin-react": "4.2.0",
     "@yelo/rollup-node-external": "^1.0.1",
     "alias-hq": "6.2.3",
-    "eslint": "8.53.0",
+    "eslint": "8.54.0",
     "eslint-config-prettier": "9.0.0",
     "eslint-plugin-import": "2.29.0",
     "eslint-plugin-prettier": "5.0.1",

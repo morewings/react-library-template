@@ -1,0 +1,41 @@
+# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Node.js CI
+
+on:
+  #  push:
+  #    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  lint-test:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
+      - name: Cancel Workflow Action
+        uses: styfle/cancel-workflow-action@0.10.1
+        with:
+          access_token: ${{ github.token }}
+      - name: Read .nvmrc
+        run: echo ::set-output name=NVMRC::$(cat .nvmrc)
+        id: nvm
+      - name: Use Node.js ${{ steps.nvm.outputs.NVMRC }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ steps.nvm.outputs.NVMRC }}
+          cache: 'pnpm'
+      - name: Run test tasks
+        run: |
+          pnpm install
+          pnpm run lint:code --quiet
+          pnpm run lint:style --quiet
+          pnpm run test --silent
+          pnpm run start:docs --smoke-test --quiet
+          pnpm run build

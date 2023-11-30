@@ -1,8 +1,7 @@
 import type {FC} from 'react';
-import React, {useEffect} from 'react';
+import {useEffect} from 'react';
 import {throttle} from 'lodash';
 
-// import classes from './Test.module.css'
 import classes from './Counter.module.css';
 import useLogic from './useLogic';
 

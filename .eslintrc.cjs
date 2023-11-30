@@ -5,14 +5,127 @@ module.exports = {
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:react-hooks/recommended',
+    'plugin:ssr-friendly/recommended',
+    'plugin:storybook/recommended',
+    'plugin:prettier/recommended',
   ],
-  ignorePatterns: ['dist', '.eslintrc.cjs'],
   parser: '@typescript-eslint/parser',
-  plugins: ['react-refresh'],
+  plugins: ['import', 'prettier', '@typescript-eslint', 'ssr-friendly', 'react-refresh'],
   rules: {
+    /**
+     * Allow empty arrow functions `() => {}`, while keeping other empty functions restricted
+     * @see https://eslint.org/docs/latest/rules/no-empty-function#allow-arrowfunctions
+     */
+    '@typescript-eslint/no-empty-function': [
+      'error',
+      {allow: ['arrowFunctions']},
+    ],
+    '@typescript-eslint/ban-ts-comment': 1,
+    'no-const-assign': 'error',
+    /** Restrict imports from devDependencies since they are not included in library build. peerDependencies are ok */
+    'import/no-extraneous-dependencies': [
+      'error',
+      {
+        devDependencies: false,
+        peerDependencies: true,
+      },
+    ],
+    /**
+     * Enforce import order with empty lines between import group
+     * @see https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/order.md
+     */
+    'import/order': [
+      'error',
+      {
+        groups: [
+          'builtin',
+          'external',
+          'internal',
+          ['parent', 'sibling', 'index'],
+        ],
+        pathGroups: [
+          {
+            pattern: 'lib/**',
+            group: 'internal',
+          },
+          {
+            pattern: 'environment/**',
+            group: 'internal',
+          },
+        ],
+        'newlines-between': 'always',
+      },
+    ],
+    /**
+     * Disallow combined module and type imports like this `import React, {FC} from 'react'`.
+     * Eslint will try to split into type and module imports instead
+     * @see https://typescript-eslint.io/rules/consistent-type-imports/
+     */
+    '@typescript-eslint/consistent-type-imports': 'error',
+    'import/no-cycle': 'error',
+    'prettier/prettier': [
+      'error',
+      {
+        semi: true,
+        singleQuote: true,
+        jsxSingleQuote: false,
+        trailingComma: 'es5',
+        bracketSpacing: false,
+        jsxBracketSameLine: true,
+        arrowParens: 'avoid',
+      },
+    ],
     'react-refresh/only-export-components': [
       'warn',
       { allowConstantExport: true },
     ],
   },
-}
+  overrides: [
+    /* Allow require imports for internal scripts */
+    {
+      files: ['*.js', '*.cjs'],
+      rules: {
+        '@typescript-eslint/no-var-requires': 0,
+      },
+    },
+    /* Allow devDependencies imports for tests and config files */
+    {
+      files: [
+        '**/*.spec.*',
+        '**/testUtils/*.*',
+        '**/*.js',
+        '**/*.cjs',
+        '**/setupTests.ts',
+        '**/*.stories.*',
+        'vite.config.ts'
+      ],
+      rules: {
+        'import/no-extraneous-dependencies': [
+          'error',
+          {
+            devDependencies: true,
+            peerDependencies: true,
+          },
+        ],
+      },
+    },
+    /* Disable `environment` directory imports for library files */
+    {
+      files: ['./src/lib/**/*.*'],
+      rules: {
+        'no-restricted-imports': [
+          'error',
+          {
+            patterns: [
+              {
+                "group": ['**/environment/**'],
+                "message": "Imports from environment directory are forbidden in the library files."
+              }
+            ],
+          },
+        ]
+      }
+    }
+  ],
+};
+

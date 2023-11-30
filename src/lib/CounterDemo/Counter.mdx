@@ -1,0 +1,25 @@
+import { Meta, ArgsTable, Story } from "@storybook/blocks";
+import * as CounterStories from './Counter.stories';
+import { Counter } from "./Counter";
+
+<Meta title="Example/Counter" component={Counter} />
+
+# Example Component Demo
+
+## Counter props
+
+<ArgsTable of={Counter} />
+
+## Description
+
+`Counter` component provides user basic interface to increment counter by one.
+
+## Demo
+
+<Story of={CounterStories.ExampleCounter} />
+
+## With initial value
+
+This is another example with initial value
+
+<Story of={CounterStories.ExampleCounterWithInitialValue} />

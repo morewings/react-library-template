@@ -1,6 +1,6 @@
 [![CI](https://github.com/morewings/react-library-template/actions/workflows/merge-jobs.yml/badge.svg)](https://github.com/morewings/react-library-template/actions/workflows/merge-jobs.yml)
 [![Storybook deploy](https://github.com/morewings/react-library-template/actions/workflows/pages.yml/badge.svg)](https://github.com/morewings/react-library-template/actions/workflows/pages.yml)
-
+[![Use this template](https://img.shields.io/badge/use%20this-template-blue?logo=githu)](https://github.com/morewings/react-library-template/generate)
 
 # React Library Template
 

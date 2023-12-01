@@ -5,7 +5,7 @@
 
 With React Library Template Repository, you can focus on developing your React components and libraries without worrying about the configuration and setup.
 
-Read [full documentation](https://github.com/morewings/cra-template-npm-library/wiki).
+Read [full documentation](https://dev.to/morewings/fastest-way-to-create-a-react-library-3mi7).
 
 Visit [Demo Storybook](https://morewings.github.io/react-library-template/).
 

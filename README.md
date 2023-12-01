@@ -1,5 +1,8 @@
 # React Library Template
 
+
+[![NPM library Create React App template logo](./design/logo.jpg)](#)
+
 With React Library Template Repository, you can focus on developing your React components and libraries without worrying about the configuration and setup.
 
 Read [full documentation](https://github.com/morewings/cra-template-npm-library/wiki).

@@ -67,7 +67,7 @@
     "@storybook/react-vite": "7.6.2",
     "@storybook/test": "7.6.2",
     "@storybook/types": "7.6.2",
-    "@testing-library/jest-dom": "6.1.4",
+    "@testing-library/jest-dom": "6.1.5",
     "@testing-library/react": "14.1.2",
     "@types/jest": "29.5.10",
     "@types/lodash": "4.14.202",

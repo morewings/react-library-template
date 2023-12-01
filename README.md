@@ -1,3 +1,6 @@
+[![Deploy static content to Pages](https://github.com/morewings/react-library-template/actions/workflows/pages.yml/badge.svg)](https://github.com/morewings/react-library-template/actions/workflows/pages.yml)
+
+
 # React Library Template
 
 

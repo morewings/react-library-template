@@ -14,6 +14,7 @@ export default defineConfig({
   },
   plugins: [react(), dts({rollupTypes: true})],
   build: {
+    sourcemap: true,
     lib: {
       // Could also be a dictionary or array of multiple entry points
       entry: resolve(__dirname, 'src/lib/index.ts'),

@@ -92,7 +92,7 @@ module.exports = {
     '@typescript-eslint/consistent-type-definitions': [
       'error',
       'type'
-    ]
+    ],
   },
   overrides: [
     /* Allow require imports for internal scripts */
@@ -119,6 +119,24 @@ module.exports = {
           {
             devDependencies: true,
             peerDependencies: true,
+          },
+        ],
+      },
+    },
+    /* Disable `environment` directory imports for library files */
+    {
+      files: ['./src/lib/**/*.*'],
+      rules: {
+        'no-restricted-imports': [
+          'error',
+          {
+            patterns: [
+              {
+                group: ['**/environment/**'],
+                message:
+                  'Imports from environment directory are forbidden in the library files.',
+              },
+            ],
           },
         ],
       },

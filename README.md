@@ -24,7 +24,6 @@ Visit [Demo Storybook](https://morewings.github.io/react-library-template/).
 - [Rollup](https://rollupjs.org/guide/en/) for bundling.
 - [Jest](https://jestjs.io/) and [react-testing-library](https://testing-library.com/docs/react-testing-library/intro) for testing.
 - [Storybook](https://storybook.js.org/) for documentation and demo.
-- And [much more](https://github.com/morewings/cra-template-npm-library/wiki).
 
 ## Quickstart
 

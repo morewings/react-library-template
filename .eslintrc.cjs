@@ -78,9 +78,24 @@ module.exports = {
                 arrowParens: 'avoid',
             },
         ],
+        /* Required by vite */
         'react-refresh/only-export-components': ['warn', {allowConstantExport: true}],
         '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
-        '@typescript-eslint/no-unused-vars': ['error', { varsIgnorePattern: "_", ignoreRestSiblings: true }],
+        /**
+         * Allow unused variables with names stating with '_'
+         * @see https://eslint.org/docs/latest/rules/no-unused-vars
+         * @see https://typescript-eslint.io/rules/no-unused-vars/
+         */
+        '@typescript-eslint/no-unused-vars': [
+            'error',
+            {
+                argsIgnorePattern: '^_',
+                varsIgnorePattern: '^_',
+                caughtErrorsIgnorePattern: '^_',
+                ignoreRestSiblings: true,
+                args: 'after-used',
+            },
+        ],
     },
     overrides: [
         /* Allow require imports for internal scripts */

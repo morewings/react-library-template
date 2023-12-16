@@ -12,7 +12,10 @@ export default defineConfig({
     resolve: {
         alias: hq.get('rollup'),
     },
-    plugins: [react(), dts({rollupTypes: true})],
+    plugins: [
+        react(), 
+        dts({rollupTypes: true, exclude: ['**/*.stories.(ts|tsx)']}),
+    ],
     build: {
         sourcemap: true,
         lib: {

@@ -160,5 +160,15 @@ module.exports = {
                 ],
             },
         },
+        /**
+         * Disable rules of hooks for story files in order to have better story code display.
+         * @see TemplateName.stories.tsx
+         */
+        {
+            files: ['**/*.stories.*'],
+            rules: {
+                'react-hooks/rules-of-hooks': 'off',
+            },
+        },
     ],
 };

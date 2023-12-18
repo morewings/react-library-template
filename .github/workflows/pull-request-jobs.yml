@@ -39,3 +39,4 @@ jobs:
           pnpm run test --silent
           pnpm run start:docs --smoke-test --quiet
           pnpm run build
+          pnpm run generate:component Foo --dry-run

@@ -9,4 +9,5 @@ export default {
         '\\.(gif|ttf|eot|svg|png)$': 'identity-obj-proxy',
         '\\.css$': 'identity-obj-proxy',
     },
+    modulePathIgnorePatterns: ['<rootDir>/templates/'],
 };

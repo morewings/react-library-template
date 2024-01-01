@@ -62,7 +62,7 @@
     "@storybook/addon-interactions": "7.6.7",
     "@storybook/addon-links": "7.6.6",
     "@storybook/blocks": "7.6.2",
-    "@storybook/react": "7.6.2",
+    "@storybook/react": "7.6.7",
     "@storybook/react-vite": "7.6.6",
     "@storybook/test": "7.6.2",
     "@storybook/types": "7.6.2",

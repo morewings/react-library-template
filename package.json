@@ -64,7 +64,7 @@
     "@storybook/blocks": "7.6.2",
     "@storybook/react": "7.6.7",
     "@storybook/react-vite": "7.6.6",
-    "@storybook/test": "7.6.2",
+    "@storybook/test": "7.6.7",
     "@storybook/types": "7.6.2",
     "@testing-library/jest-dom": "6.1.6",
     "@testing-library/react": "14.1.2",

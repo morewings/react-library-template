@@ -103,7 +103,7 @@
     "stylelint": "15.11.0",
     "stylelint-config-prettier": "9.0.5",
     "stylelint-config-standard": "34.0.0",
-    "stylelint-order": "6.0.3",
+    "stylelint-order": "6.0.4",
     "stylelint-prettier": "4.1.0",
     "ts-jest": "29.1.1",
     "ts-node": "10.9.1",

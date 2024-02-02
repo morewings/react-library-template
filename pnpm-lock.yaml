@@ -164,8 +164,8 @@ devDependencies:
     specifier: 5.0.12
     version: 5.0.12(@types/node@20.10.1)
   vite-plugin-dts:
-    specifier: ^3.7.0
-    version: 3.7.0(@types/node@20.10.1)(typescript@5.3.3)(vite@5.0.12)
+    specifier: ^3.7.2
+    version: 3.7.2(@types/node@20.10.1)(typescript@5.3.3)(vite@5.0.12)
 
 packages:
 
@@ -13354,8 +13354,8 @@ packages:
     engines: {node: '>= 0.8'}
     dev: true
 
-  /vite-plugin-dts@3.7.0(@types/node@20.10.1)(typescript@5.3.3)(vite@5.0.12):
-    resolution: {integrity: sha512-np1uPaYzu98AtPReB8zkMnbjwcNHOABsLhqVOf81b3ol9b5M2wPcAVs8oqPnOpr6Us+7yDXVauwkxsk5+ldmRA==}
+  /vite-plugin-dts@3.7.2(@types/node@20.10.1)(typescript@5.3.3)(vite@5.0.12):
+    resolution: {integrity: sha512-kg//1nDA01b8rufJf4TsvYN8LMkdwv0oBYpiQi6nRwpHyue+wTlhrBiqgipdFpMnW1oOYv6ywmzE5B0vg6vSEA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       typescript: '*'

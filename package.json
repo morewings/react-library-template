@@ -58,7 +58,7 @@
     "lodash": "^4.17.21"
   },
   "devDependencies": {
-    "@storybook/addon-essentials": "7.6.2",
+    "@storybook/addon-essentials": "7.6.12",
     "@storybook/addon-interactions": "7.6.12",
     "@storybook/addon-links": "7.6.12",
     "@storybook/blocks": "7.6.2",

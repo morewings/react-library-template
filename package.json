@@ -67,7 +67,7 @@
     "@storybook/test": "7.6.12",
     "@storybook/types": "7.6.12",
     "@testing-library/jest-dom": "6.4.1",
-    "@testing-library/react": "14.2.0",
+    "@testing-library/react": "14.2.1",
     "@types/jest": "29.5.12",
     "@types/lodash": "4.14.202",
     "@types/react": "18.2.55",

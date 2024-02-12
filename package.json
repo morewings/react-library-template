@@ -101,7 +101,6 @@
     "react-dom": "18.2.0",
     "storybook": "7.6.14",
     "stylelint": "15.11.0",
-    "stylelint-config-prettier": "9.0.5",
     "stylelint-config-standard": "34.0.0",
     "stylelint-order": "6.0.4",
     "stylelint-prettier": "4.1.0",

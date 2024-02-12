@@ -1,8 +1,7 @@
 {
   "extends": [
     "stylelint-config-standard",
-    "stylelint-prettier/recommended",
-    "stylelint-config-prettier"
+    "stylelint-prettier/recommended"
   ],
   "rules": {
     "function-calc-no-unspaced-operator": true,

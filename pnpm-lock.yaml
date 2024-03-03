@@ -161,8 +161,8 @@ devDependencies:
     specifier: 5.1.4
     version: 5.1.4(@types/node@20.10.1)
   vite-plugin-dts:
-    specifier: ^3.7.2
-    version: 3.7.2(@types/node@20.10.1)(typescript@5.3.3)(vite@5.1.4)
+    specifier: ^3.7.3
+    version: 3.7.3(@types/node@20.10.1)(typescript@5.3.3)(vite@5.1.4)
 
 packages:
 
@@ -2814,6 +2814,7 @@ packages:
 
   /@microsoft/api-extractor@7.39.0(@types/node@20.10.1):
     resolution: {integrity: sha512-PuXxzadgnvp+wdeZFPonssRAj/EW4Gm4s75TXzPk09h3wJ8RS3x7typf95B4vwZRrPTQBGopdUl+/vHvlPdAcg==}
+    hasBin: true
     dependencies:
       '@microsoft/api-extractor-model': 7.28.3(@types/node@20.10.1)
       '@microsoft/tsdoc': 0.14.2
@@ -8166,6 +8167,7 @@ packages:
 
   /he@1.2.0:
     resolution: {integrity: sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==}
+    hasBin: true
     dev: true
 
   /hosted-git-info@2.8.9:
@@ -13094,8 +13096,8 @@ packages:
     engines: {node: '>= 0.8'}
     dev: true
 
-  /vite-plugin-dts@3.7.2(@types/node@20.10.1)(typescript@5.3.3)(vite@5.1.4):
-    resolution: {integrity: sha512-kg//1nDA01b8rufJf4TsvYN8LMkdwv0oBYpiQi6nRwpHyue+wTlhrBiqgipdFpMnW1oOYv6ywmzE5B0vg6vSEA==}
+  /vite-plugin-dts@3.7.3(@types/node@20.10.1)(typescript@5.3.3)(vite@5.1.4):
+    resolution: {integrity: sha512-26eTlBYdpjRLWCsTJebM8vkCieE+p9gP3raf+ecDnzzK5E3FG6VE1wcy55OkRpfWWVlVvKkYFe6uvRHYWx7Nog==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       typescript: '*'
@@ -13522,6 +13524,7 @@ packages:
   /z-schema@5.0.5:
     resolution: {integrity: sha512-D7eujBWkLa3p2sIpJA0d1pr7es+a7m0vFAnZLlCEKq/Ij2k0MLi9Br2UPxoxdYystm5K1yeBGzub0FlYUEWj2Q==}
     engines: {node: '>=8.0.0'}
+    hasBin: true
     dependencies:
       lodash.get: 4.4.2
       lodash.isequal: 4.5.0

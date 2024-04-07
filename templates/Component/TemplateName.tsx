@@ -20,7 +20,7 @@ export const TemplateName: FC<Props> = ({initialValue = 0}) => {
         runner();
     }, []);
     return (
-        <div className={classes['template-name']}>
+        <div className={classes.templateName}>
             <h2 className={classes.header}>Counter</h2>
             <button className={classes.button} type="button" onClick={incrementCount}>
                 Increment by one

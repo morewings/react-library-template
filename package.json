@@ -48,7 +48,8 @@
     "start:docs": "storybook dev -p 6006",
     "build:docs": "storybook build",
     "generate:component": "npx generate-react-cli component",
-    "prepare": "is-ci || husky"
+    "prepare": "is-ci || husky",
+    "lint-staged": "lint-staged"
   },
   "peerDependencies": {
     "react": ">=18.2.0",

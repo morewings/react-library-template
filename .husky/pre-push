@@ -1,1 +1,1 @@
-#CI=true yarn test --passWithNoTests --silent
+CI=true pnpm run test --passWithNoTests --silent

@@ -10,4 +10,5 @@ export default {
         '\\.css$': 'identity-obj-proxy',
     },
     modulePathIgnorePatterns: ['<rootDir>/templates/'],
+    setupFilesAfterEnv: ['<rootDir>/src/setupTests.ts'],
 };

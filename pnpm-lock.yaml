@@ -23,8 +23,8 @@ devDependencies:
     specifier: 8.0.9
     version: 8.0.9(@types/react@18.2.61)(react-dom@18.2.0)(react@18.2.0)
   '@storybook/react':
-    specifier: 8.0.6
-    version: 8.0.6(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)
+    specifier: 8.0.9
+    version: 8.0.9(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)
   '@storybook/react-vite':
     specifier: 8.0.6
     version: 8.0.6(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)(vite@5.2.10)
@@ -3313,7 +3313,7 @@ packages:
       '@storybook/client-logger': 8.0.6
       '@storybook/components': 8.0.6(@types/react@18.2.61)(react-dom@18.2.0)(react@18.2.0)
       '@storybook/core-events': 8.0.6
-      '@storybook/csf': 0.1.2
+      '@storybook/csf': 0.1.6
       '@storybook/docs-tools': 8.0.6
       '@storybook/global': 5.0.0
       '@storybook/icons': 1.2.9(react-dom@18.2.0)(react@18.2.0)
@@ -3533,7 +3533,7 @@ packages:
       '@babel/core': 7.24.1
       '@babel/preset-env': 7.23.5(@babel/core@7.24.1)
       '@babel/types': 7.24.0
-      '@storybook/csf': 0.1.2
+      '@storybook/csf': 0.1.6
       '@storybook/csf-tools': 8.0.6
       '@storybook/node-logger': 8.0.6
       '@storybook/types': 8.0.6
@@ -3557,7 +3557,7 @@ packages:
     dependencies:
       '@radix-ui/react-slot': 1.0.2(@types/react@18.2.61)(react@18.2.0)
       '@storybook/client-logger': 8.0.6
-      '@storybook/csf': 0.1.2
+      '@storybook/csf': 0.1.6
       '@storybook/global': 5.0.0
       '@storybook/icons': 1.2.9(react-dom@18.2.0)(react@18.2.0)
       '@storybook/theming': 8.0.6(react-dom@18.2.0)(react@18.2.0)
@@ -3685,7 +3685,7 @@ packages:
       '@storybook/channels': 8.0.6
       '@storybook/core-common': 8.0.6
       '@storybook/core-events': 8.0.6
-      '@storybook/csf': 0.1.2
+      '@storybook/csf': 0.1.6
       '@storybook/csf-tools': 8.0.6
       '@storybook/docs-mdx': 3.0.0
       '@storybook/global': 5.0.0
@@ -3746,7 +3746,7 @@ packages:
       '@babel/parser': 7.24.1
       '@babel/traverse': 7.24.1
       '@babel/types': 7.24.0
-      '@storybook/csf': 0.1.2
+      '@storybook/csf': 0.1.6
       '@storybook/types': 8.0.6
       fs-extra: 11.2.0
       recast: 0.23.6
@@ -3961,6 +3961,16 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: true
 
+  /@storybook/react-dom-shim@8.0.9(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-8011KlRuG3obr5pZZ7bcEyYYNWF3tR596YadoMd267NPoHKvwAbKL1L/DNgb6kiYjZDUf9QfaKSCWW31k0kcRQ==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: true
+
   /@storybook/react-vite@8.0.6(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)(vite@5.2.10):
     resolution: {integrity: sha512-M6R6nl7dcXZ+wQHqFD1Qh/v4GPygqlC0pwE/cZ7FKUYA2wO3qm81OpuZYBKJoFIyHbRP/8oPKSvuzkgZvGY+/g==}
     engines: {node: '>=18.0.0'}
@@ -4008,6 +4018,46 @@ packages:
       '@storybook/preview-api': 8.0.6
       '@storybook/react-dom-shim': 8.0.6(react-dom@18.2.0)(react@18.2.0)
       '@storybook/types': 8.0.6
+      '@types/escodegen': 0.0.6
+      '@types/estree': 0.0.51
+      '@types/node': 18.18.14
+      acorn: 7.4.1
+      acorn-jsx: 5.3.2(acorn@7.4.1)
+      acorn-walk: 7.2.0
+      escodegen: 2.1.0
+      html-tags: 3.3.1
+      lodash: 4.17.21
+      prop-types: 15.8.1
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      react-element-to-jsx-string: 15.0.0(react-dom@18.2.0)(react@18.2.0)
+      semver: 7.5.4
+      ts-dedent: 2.2.0
+      type-fest: 2.19.0
+      typescript: 5.3.3
+      util-deprecate: 1.0.2
+    transitivePeerDependencies:
+      - encoding
+      - supports-color
+    dev: true
+
+  /@storybook/react@8.0.9(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3):
+    resolution: {integrity: sha512-NeQ6suZG3HKikwe3Tx9cAIaRx7uP8FKCmlVvIiBg4LTTI5orCt94PPakvuZukZcbkqvcCnEBkebAzwUpn8PiJw==}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+      typescript: '>= 4.2.x'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+    dependencies:
+      '@storybook/client-logger': 8.0.9
+      '@storybook/docs-tools': 8.0.9
+      '@storybook/global': 5.0.0
+      '@storybook/preview-api': 8.0.9
+      '@storybook/react-dom-shim': 8.0.9(react-dom@18.2.0)(react@18.2.0)
+      '@storybook/types': 8.0.9
       '@types/escodegen': 0.0.6
       '@types/estree': 0.0.51
       '@types/node': 18.18.14

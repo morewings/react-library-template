@@ -17,8 +17,8 @@ devDependencies:
     specifier: 8.0.9
     version: 8.0.9(@types/jest@29.5.12)(jest@29.7.0)
   '@storybook/addon-links':
-    specifier: 8.0.6
-    version: 8.0.6(react@18.2.0)
+    specifier: 8.0.9
+    version: 8.0.9(react@18.2.0)
   '@storybook/blocks':
     specifier: 8.0.9
     version: 8.0.9(@types/react@18.2.61)(react-dom@18.2.0)(react@18.2.0)
@@ -3106,15 +3106,15 @@ packages:
       - vitest
     dev: true
 
-  /@storybook/addon-links@8.0.6(react@18.2.0):
-    resolution: {integrity: sha512-1UBNhQdwm17fXmuUKIsgvT6YenMbaGIYdr/9ApKmIMTKKO+emQ7APlsTbvasutcOkCd57rC1KZRfAHQpgU9wDQ==}
+  /@storybook/addon-links@8.0.9(react@18.2.0):
+    resolution: {integrity: sha512-FVt+AdW3JFSqbJzkKiqKsMRWqHXqEvCBqFs7lNfk3OW0w0jfv1iREtrxE0dVdJoUFQC9V/2Im/EpJ7UB3C2bNQ==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
     peerDependenciesMeta:
       react:
         optional: true
     dependencies:
-      '@storybook/csf': 0.1.2
+      '@storybook/csf': 0.1.6
       '@storybook/global': 5.0.0
       react: 18.2.0
       ts-dedent: 2.2.0
@@ -3568,12 +3568,6 @@ packages:
       lodash: 4.17.21
     dev: true
 
-  /@storybook/csf@0.1.2:
-    resolution: {integrity: sha512-ePrvE/pS1vsKR9Xr+o+YwdqNgHUyXvg+1Xjx0h9LrVx7Zq4zNe06pd63F5EvzTbCbJsHj7GHr9tkiaqm7U8WRA==}
-    dependencies:
-      type-fest: 2.19.0
-    dev: true
-
   /@storybook/csf@0.1.6:
     resolution: {integrity: sha512-JjWnBptVhBYJ14yq+cHs66BXjykRUWQ5TlD1RhPxMOtavynYyV/Q+QR98/N+XB+mcPtFMm5I2DvNkpj0/Dk8Mw==}
     dependencies:
@@ -3706,7 +3700,7 @@ packages:
       '@storybook/channels': 8.0.6
       '@storybook/client-logger': 8.0.6
       '@storybook/core-events': 8.0.6
-      '@storybook/csf': 0.1.2
+      '@storybook/csf': 0.1.6
       '@storybook/global': 5.0.0
       '@storybook/types': 8.0.6
       '@types/qs': 6.9.10

@@ -4,6 +4,8 @@
     "**/*.stories.tsx",
     "**/*.stories.ts",
     "*.config.ts",
+    "tailwind.config.js",
+    "postcss.config.js",
     "src",
     ".eslintrc.cjs",
     "templates/**/*.ts",

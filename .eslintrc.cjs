@@ -21,6 +21,7 @@ module.exports = {
         'plugin:react/jsx-runtime',
         'plugin:react-hooks/recommended',
         'plugin:ssr-friendly/recommended',
+        'plugin:tailwindcss/recommended',
         'plugin:storybook/recommended',
         'plugin:prettier/recommended',
     ],

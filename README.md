@@ -24,6 +24,7 @@ Visit [Demo Storybook](https://morewings.github.io/react-library-template/).
 - [Rollup](https://rollupjs.org/guide/en/) for bundling.
 - [Jest](https://jestjs.io/) and [react-testing-library](https://testing-library.com/docs/react-testing-library/intro) for testing.
 - [Storybook](https://storybook.js.org/) for documentation and demo.
+- Optional [Tailwind CSS](https://tailwindcss.com/) support.
 
 ## Quickstart
 
@@ -43,3 +44,7 @@ cd ./my-library
 pnpm i
 ```
 
+
+## Enable Tailwind CSS
+
+You can find all changes at this [PR](https://github.com/morewings/react-library-template/pull/161) and [tailwind](https://github.com/morewings/react-library-template/tree/tailwind) branch.

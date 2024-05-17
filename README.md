@@ -39,7 +39,10 @@ Visit [Demo Storybook](https://morewings.github.io/react-library-template/).
 Manually clone repo or use `degit`.
 
 ```shell script
-npx degit https://github.com/morewings/react-library-template my-library
+# With CSS Modules config
+npx degit github:morewings/react-library-template my-library
+# With Tailwind CSS config
+npx degit github:morewings/react-library-template#tailwind my-library
 cd ./my-library
 pnpm i
 ```

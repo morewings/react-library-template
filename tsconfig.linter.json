@@ -5,6 +5,7 @@
     "**/*.stories.ts",
     "*.config.ts",
     "src",
+    ".storybook",
     ".eslintrc.cjs",
     "templates/**/*.ts",
     "templates/**/*.tsx"

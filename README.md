@@ -30,7 +30,7 @@ Visit [Demo Storybook](https://morewings.github.io/react-library-template/).
 
 ### Prerequisites
 
-1. Install **Node** >= 18.x.
+1. Install **Node** >= 20.x.
 2. Install **pnpm**. E.g. `corepack prepare pnpm@latest --activate`.
 
 

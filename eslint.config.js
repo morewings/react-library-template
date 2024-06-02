@@ -14,11 +14,13 @@ import pluginReactHooks from 'eslint-plugin-react-hooks';
 import {fixupPluginRules} from '@eslint/compat';
 import configPrettierRecommended from 'eslint-plugin-prettier/recommended';
 import pluginSSR from 'eslint-plugin-ssr-friendly';
+import tailwindPlugin from 'eslint-plugin-tailwindcss';
 
 export default [
     eslint.configs.recommended,
     ...eslintTS.configs.recommended,
     ...eslintTS.configs.stylistic,
+    ...tailwindPlugin.configs['flat/recommended'],
     configReactRecommended,
     configReactJSXRuntime,
     configPrettierRecommended,

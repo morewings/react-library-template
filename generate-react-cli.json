@@ -16,7 +16,6 @@
       "withHookTest": true,
       "customTemplates": {
         "component": "templates/Component/TemplateName.tsx",
-        "style": "templates/Component/TemplateName.module.css",
         "story": "templates/Component/TemplateName.stories.tsx",
         "index": "templates/Component/index.ts",
         "mdx": "templates/Component/TemplateName.mdx",

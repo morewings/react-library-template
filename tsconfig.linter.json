@@ -5,8 +5,9 @@
     "**/*.stories.ts",
     "*.config.ts",
     "src",
-    ".storybook",
+    ".storybook/*.ts",
     ".eslintrc.cjs",
+    "eslint.config.js",
     "templates/**/*.ts",
     "templates/**/*.tsx"
   ],

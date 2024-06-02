@@ -19,6 +19,7 @@ export const Counter: FC<Props> = ({initialValue = 0}) => {
         }, 10);
         runner();
     }, []);
+
     return (
         <div className={classes.counter}>
             <h2 className={classes.header}>Counter</h2>

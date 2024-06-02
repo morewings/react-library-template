@@ -76,7 +76,7 @@
     "@types/react-dom": "18.3.0",
     "@typescript-eslint/eslint-plugin": "7.11.0",
     "@typescript-eslint/parser": "7.11.0",
-    "@vitejs/plugin-react": "4.2.1",
+    "@vitejs/plugin-react": "4.3.0",
     "@yelo/rollup-node-external": "1.0.1",
     "alias-hq": "6.2.3",
     "eslint": "8.57.0",

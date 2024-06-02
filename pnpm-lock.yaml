@@ -100,8 +100,8 @@ importers:
         specifier: 0.8.0
         version: 0.8.0(eslint@8.57.0)(typescript@5.4.5)
       generate-react-cli:
-        specifier: 8.4.1
-        version: 8.4.1
+        specifier: 8.4.6
+        version: 8.4.6
       husky:
         specifier: 9.0.11
         version: 9.0.11
@@ -1440,6 +1440,10 @@ packages:
   '@humanwhocodes/object-schema@2.0.2':
     resolution: {integrity: sha512-6EwiSjwWYP7pTckG6I5eyFANjPhmPjUX9JRLUSfNPC7FX7zK9gyZAfUEaECL6ALTpGX5AjnBq3C9XmVWPitNpw==}
 
+  '@inquirer/figures@1.0.3':
+    resolution: {integrity: sha512-ErXXzENMH5pJt5/ssXV0DfWUZqly8nGzf0UcBV9xTnP+KyffE2mqyxIMBrZ8ijQck2nU0TQm40EQB53YreyWHw==}
+    engines: {node: '>=18'}
+
   '@isaacs/cliui@8.0.2':
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
     engines: {node: '>=12'}
@@ -1548,8 +1552,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.9':
     resolution: {integrity: sha512-3Belt6tdc8bPgAtbcmdtNJlirVoTmEb5e2gC94PnkwEW9jI6CAHUeoG85tjWP5WquqfavoMtMwiG4P926ZKKuQ==}
 
-  '@ljharb/through@2.3.12':
-    resolution: {integrity: sha512-ajo/heTlG3QgC8EGP6APIejksVAYt4ayz4tqoP3MolFELzcH1x1fzwEYRJTPO0IELutZ5HQ0c26/GqAYy79u3g==}
+  '@ljharb/through@2.3.13':
+    resolution: {integrity: sha512-/gKJun8NNiWGZJkGzI/Ragc53cOdcLNdzjLaIa+GEjguQs0ulsurx8WN0jijdK9yPqDvziX995sMRLyLt1uZMQ==}
     engines: {node: '>= 0.4'}
 
   '@mdx-js/react@3.0.1':
@@ -3790,8 +3794,8 @@ packages:
   functions-have-names@1.2.3:
     resolution: {integrity: sha512-xckBUXyTIqT97tq2x2AMb+g163b5JFysYk0x4qxNFwbfQkmNZoiRHb6sPzI9/QV33WeuvVYBUIiD4NzNIyqaRQ==}
 
-  generate-react-cli@8.4.1:
-    resolution: {integrity: sha512-DkhIJSl3EQGT+l6gEpk0499CbwKcb7fRciBK7JWJGHzEI7647Ks2QyAUVMSgvqMshyB1R8HcE421w92k4W5IzA==}
+  generate-react-cli@8.4.6:
+    resolution: {integrity: sha512-BSR99cgmFKKyIJhFp31sVxAzOflT4Sb2jM+sReqSXRibZ37BADgqT8MPkEVG194rSY/+c+wxNVLrd9EMgSPSzA==}
     engines: {node: '>=10.x', npm: '>= 6.x'}
     hasBin: true
 
@@ -4102,8 +4106,8 @@ packages:
     resolution: {integrity: sha512-JG3eIAj5V9CwcGvuOmoo6LB9kbAYT8HXffUl6memuszlwDC/qvFAJw49XJ5NROSFNPxp3iQg1GqkFhaY/CR0IA==}
     engines: {node: '>=8.0.0'}
 
-  inquirer@9.2.15:
-    resolution: {integrity: sha512-vI2w4zl/mDluHt9YEQ/543VTCwPKWiHzKtm9dM2V0NdFcqEexDAjUHzO1oA60HRNaVifGXXM1tRRNluLVHa0Kg==}
+  inquirer@9.2.22:
+    resolution: {integrity: sha512-SqLLa/Oe5rZUagTR9z+Zd6izyatHglbmbvVofo1KzuVB54YHleWzeHNLoR7FOICGOeQSqeLh1cordb3MzhGcEw==}
     engines: {node: '>=18'}
 
   internal-slot@1.0.7:
@@ -8250,6 +8254,8 @@ snapshots:
 
   '@humanwhocodes/object-schema@2.0.2': {}
 
+  '@inquirer/figures@1.0.3': {}
+
   '@isaacs/cliui@8.0.2':
     dependencies:
       string-width: 5.1.2
@@ -8463,7 +8469,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.1
       '@jridgewell/sourcemap-codec': 1.4.15
 
-  '@ljharb/through@2.3.12':
+  '@ljharb/through@2.3.13':
     dependencies:
       call-bind: 1.0.7
 
@@ -11591,14 +11597,14 @@ snapshots:
 
   functions-have-names@1.2.3: {}
 
-  generate-react-cli@8.4.1:
+  generate-react-cli@8.4.6:
     dependencies:
       chalk: 5.3.0
       commander: 12.0.0
       deep-keys: 0.5.0
       dotenv: 16.4.5
       fs-extra: 11.2.0
-      inquirer: 9.2.15
+      inquirer: 9.2.22
       lodash: 4.17.21
       replace: 1.2.2
 
@@ -11925,15 +11931,15 @@ snapshots:
       strip-ansi: 6.0.1
       through: 2.3.8
 
-  inquirer@9.2.15:
+  inquirer@9.2.22:
     dependencies:
-      '@ljharb/through': 2.3.12
+      '@inquirer/figures': 1.0.3
+      '@ljharb/through': 2.3.13
       ansi-escapes: 4.3.2
       chalk: 5.3.0
       cli-cursor: 3.1.0
       cli-width: 4.1.0
       external-editor: 3.1.0
-      figures: 3.2.0
       lodash: 4.17.21
       mute-stream: 1.0.0
       ora: 5.4.1

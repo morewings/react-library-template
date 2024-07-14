@@ -13,7 +13,6 @@ import configReactJSXRuntime from 'eslint-plugin-react/configs/jsx-runtime.js';
 import pluginReactHooks from 'eslint-plugin-react-hooks';
 import {fixupPluginRules} from '@eslint/compat';
 import configPrettierRecommended from 'eslint-plugin-prettier/recommended';
-import pluginSSR from 'eslint-plugin-ssr-friendly';
 
 export default [
     eslint.configs.recommended,
@@ -50,7 +49,7 @@ export default [
         },
         rules: {
             ...pluginReactHooks.configs.recommended.rules,
-            ...pluginSSR.configs.recommended.rules,
+            ...pluginSSRFriendly.configs.recommended.rules,
             /**
              * Allow empty arrow functions `() => {}`, while keeping other empty functions restricted
              * @see https://eslint.org/docs/latest/rules/no-empty-function#allow-arrowfunctions

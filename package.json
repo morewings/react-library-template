@@ -101,7 +101,7 @@
     "npm-run-all2": "6.2.2",
     "postcss": "8.4.40",
     "postcss-preset-env": "9.5.15",
-    "prettier": "3.3.2",
+    "prettier": "3.3.3",
     "react": "18.3.1",
     "react-docgen-typescript": "2.2.2",
     "react-dom": "18.3.1",

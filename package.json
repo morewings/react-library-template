@@ -77,8 +77,8 @@
     "@types/lodash": "4.17.7",
     "@types/react": "18.3.5",
     "@types/react-dom": "18.3.0",
-    "@typescript-eslint/eslint-plugin": "8.0.1",
-    "@typescript-eslint/parser": "8.0.1",
+    "@typescript-eslint/eslint-plugin": "8.3.0",
+    "@typescript-eslint/parser": "8.3.0",
     "@vitejs/plugin-react": "4.3.1",
     "@yelo/rollup-node-external": "1.0.1",
     "alias-hq": "6.2.3",
@@ -113,7 +113,7 @@
     "ts-jest": "29.2.5",
     "ts-node": "10.9.2",
     "typescript": "5.5.4",
-    "typescript-eslint": "8.0.1",
+    "typescript-eslint": "8.3.0",
     "vite": "5.3.5",
     "vite-plugin-dts": "4.1.0"
   }

@@ -181,8 +181,8 @@ importers:
         specifier: 5.3.5
         version: 5.3.5(@types/node@20.10.1)
       vite-plugin-dts:
-        specifier: 4.0.1
-        version: 4.0.1(@types/node@20.10.1)(rollup@4.14.0)(typescript@5.5.4)(vite@5.3.5(@types/node@20.10.1))
+        specifier: 4.1.0
+        version: 4.1.0(@types/node@20.10.1)(rollup@4.14.0)(typescript@5.5.4)(vite@5.3.5(@types/node@20.10.1))
 
 packages:
 
@@ -5947,8 +5947,8 @@ packages:
     resolution: {integrity: sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==}
     engines: {node: '>= 0.8'}
 
-  vite-plugin-dts@4.0.1:
-    resolution: {integrity: sha512-JFbAKMjJdJbeXJVwQNoi8M26lP+5Ene4/ryv9w0Z7Ca5N0DdxYEak9V3C0tqwHO7WZ9JLbwMsuUZOqYIyBRwSQ==}
+  vite-plugin-dts@4.1.0:
+    resolution: {integrity: sha512-sRlmt9k2q8MrX4F2058N3KmB6WyJ3Ao6QaExOv1X99F3j0GhPziEz1zscWQ1q2r1PeFc96L7GIUu8Pl2DPr2Hg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       typescript: '*'
@@ -7747,7 +7747,7 @@ snapshots:
   '@jridgewell/gen-mapping@0.3.5':
     dependencies:
       '@jridgewell/set-array': 1.2.1
-      '@jridgewell/sourcemap-codec': 1.4.15
+      '@jridgewell/sourcemap-codec': 1.5.0
       '@jridgewell/trace-mapping': 0.3.25
 
   '@jridgewell/resolve-uri@3.1.1': {}
@@ -7761,7 +7761,7 @@ snapshots:
   '@jridgewell/trace-mapping@0.3.25':
     dependencies:
       '@jridgewell/resolve-uri': 3.1.1
-      '@jridgewell/sourcemap-codec': 1.4.15
+      '@jridgewell/sourcemap-codec': 1.5.0
 
   '@jridgewell/trace-mapping@0.3.9':
     dependencies:
@@ -13166,7 +13166,7 @@ snapshots:
 
   vary@1.1.2: {}
 
-  vite-plugin-dts@4.0.1(@types/node@20.10.1)(rollup@4.14.0)(typescript@5.5.4)(vite@5.3.5(@types/node@20.10.1)):
+  vite-plugin-dts@4.1.0(@types/node@20.10.1)(rollup@4.14.0)(typescript@5.5.4)(vite@5.3.5(@types/node@20.10.1)):
     dependencies:
       '@microsoft/api-extractor': 7.47.4(@types/node@20.10.1)
       '@rollup/pluginutils': 5.1.0(rollup@4.14.0)

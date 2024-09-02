@@ -100,7 +100,7 @@
     "lint-staged": "15.2.10",
     "npm-run-all2": "6.2.2",
     "postcss": "8.4.43",
-    "postcss-preset-env": "9.6.0",
+    "postcss-preset-env": "10.0.2",
     "prettier": "3.3.3",
     "react": "18.3.1",
     "react-docgen-typescript": "2.2.2",

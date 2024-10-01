@@ -81,7 +81,7 @@
     "@typescript-eslint/parser": "8.3.0",
     "@vitejs/plugin-react": "4.3.2",
     "@yelo/rollup-node-external": "1.0.1",
-    "alias-hq": "6.2.3",
+    "alias-hq": "6.2.4",
     "eslint": "9.9.1",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-import": "2.29.1",

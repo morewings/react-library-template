@@ -100,8 +100,8 @@ importers:
         specifier: 4.6.2
         version: 4.6.2(eslint@9.12.0)
       eslint-plugin-react-refresh:
-        specifier: 0.4.12
-        version: 0.4.12(eslint@9.12.0)
+        specifier: 0.4.14
+        version: 0.4.14(eslint@9.12.0)
       eslint-plugin-ssr-friendly:
         specifier: 1.3.0
         version: 1.3.0(eslint@9.12.0)
@@ -3016,8 +3016,8 @@ packages:
     peerDependencies:
       eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0
 
-  eslint-plugin-react-refresh@0.4.12:
-    resolution: {integrity: sha512-9neVjoGv20FwYtCP6CB1dzR1vr57ZDNOXst21wd2xJ/cTlM2xLq0GWVlSNTdMn/4BtP6cHYBMCSp1wFBJ9jBsg==}
+  eslint-plugin-react-refresh@0.4.14:
+    resolution: {integrity: sha512-aXvzCTK7ZBv1e7fahFuR3Z/fyQQSIQ711yPgYRj+Oj64tyTgO4iQIDmYXDBqvSWQ/FA4OSCsXOStlF+noU0/NA==}
     peerDependencies:
       eslint: '>=7'
 
@@ -9043,7 +9043,7 @@ snapshots:
     dependencies:
       eslint: 9.12.0
 
-  eslint-plugin-react-refresh@0.4.12(eslint@9.12.0):
+  eslint-plugin-react-refresh@0.4.14(eslint@9.12.0):
     dependencies:
       eslint: 9.12.0
 

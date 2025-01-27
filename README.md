@@ -4,6 +4,8 @@
 
 # React Library Template
 
+[![NPM library Create React App template logo](./design/logo.jpg)](#)
+
 This template repository is your shortcut to building awesome React components and libraries! ⚡
 
 Forget about the tedious setup – we've got you covered. Focus on writing your code, and let this template handle the rest.

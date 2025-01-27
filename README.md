@@ -4,27 +4,22 @@
 
 # React Library Template
 
+This template repository is your shortcut to building awesome React components and libraries! ⚡
 
-[![NPM library Create React App template logo](./design/logo.jpg)](#)
-
-With React Library Template Repository, you can focus on developing your React components and libraries without worrying about the configuration and setup.
-
-Read [full documentation](https://dev.to/morewings/fastest-way-to-create-a-react-library-3mi7).
-
-Visit [Demo Storybook](https://morewings.github.io/react-library-template/).
+Forget about the tedious setup – we've got you covered. Focus on writing your code, and let this template handle the rest.
 
 ## Features
 
-- Supports **Typescript** and **Javascript**.
-- Bundles `commonjs` and `es` module formats.
-- [pnpm](https://pnpm.io/) for blazing fast package management.
-- [Vite](https://vitejs.dev/) for speedy bundling
-- [Husky](https://github.com/typicode/husky) for git hooks.
-- [Eslint](https://eslint.org/) and [stylelint](https://stylelint.io/).
-- [Rollup](https://rollupjs.org/guide/en/) for bundling.
-- [Jest](https://jestjs.io/) and [react-testing-library](https://testing-library.com/docs/react-testing-library/intro) for testing.
-- [Storybook](https://storybook.js.org/) for documentation and demo.
-- Optional [Tailwind CSS](https://tailwindcss.com/) support.
+- **TypeScript & JavaScript**: Write your code in the language you prefer.
+- **Blazing fast**: **pnpm** for speedy package management and **Vite** for lightning-fast builds.
+- **Husky** enforces pre-commit hooks, **Eslint** and **Stylelint** will keep your code tidy and consistent.
+- **Jest** and **react-testing-library** help you write robust tests.
+- **Storybook** lets you create interactive demos and docs for your components.
+- **Optional Tailwind CSS**: If you're into it, you can easily enable Tailwind CSS for styling.
+
+See it in action: [Demo Storybook](https://morewings.github.io/react-library-template/)
+
+This template is your starting point for building high-quality React libraries. Clone it, customize it, and let's build something amazing! 🚀
 
 ## Quickstart
 

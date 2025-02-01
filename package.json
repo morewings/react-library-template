@@ -59,7 +59,7 @@
     "lodash": "^4.17.21"
   },
   "devDependencies": {
-    "@eslint/compat": "1.2.4",
+    "@eslint/compat": "1.2.6",
     "@eslint/eslintrc": "3.1.0",
     "@eslint/js": "9.14.0",
     "@storybook/addon-essentials": "8.5.2",

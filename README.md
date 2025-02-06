@@ -6,7 +6,7 @@
 
 [![NPM library Create React App template logo](./design/logo.jpg)](#)
 
-This template repository is your shortcut to building awesome React components and libraries! ⚡
+This template repository is your shortcut to building awesome React components and libraries!
 
 Forget about the tedious setup – we've got you covered. Focus on writing your code, and let this template handle the rest.
 
@@ -21,7 +21,7 @@ Forget about the tedious setup – we've got you covered. Focus on writing your 
 
 See it in action: [Demo Storybook](https://morewings.github.io/react-library-template/)
 
-This template is your starting point for building high-quality React libraries. Clone it, customize it, and let's build something amazing! 🚀
+This template is your starting point for building high-quality React libraries. Clone it, customize it, and let's build something amazing!
 
 ## Quickstart
 

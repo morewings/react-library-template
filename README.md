@@ -90,3 +90,5 @@ export default defineConfig(() => ({
 }));
 
 ```
+
+You can find all changes at corresponding [PR](https://github.com/morewings/react-library-template/pull/352) and [tree-shaking](https://github.com/morewings/react-library-template/tree/tree-shaking) branch.

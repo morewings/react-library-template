@@ -48,3 +48,45 @@ pnpm i
 ## Enable Tailwind CSS
 
 You can find all changes at this [PR](https://github.com/morewings/react-library-template/pull/161) and [tailwind](https://github.com/morewings/react-library-template/tree/tailwind) branch.
+
+## Improve tree shaking
+
+The default settings allow modern bundlers such as Vite and esbuild successfully tree-shake unused modules from the bundle.
+Unfortunately there are problems with Next.js and Webpack not capable to tree-shake single file ES Module.
+
+In order to fix this enable `preserveModules` setting in Rollup options.
+
+```ts
+import {defineConfig} from 'vite';
+
+export default defineConfig(() => ({
+    // ...
+    build: {
+        lib: {
+            // ...
+            fileName: (format, entryName) => {
+                // Create entry file(s) inside the bundle
+                if (entryName === 'src/lib/index') {
+                    return `index.${format === 'es' ? 'js' : 'cjs'}`;
+                // Organize external dependencies which included in the bundle
+                } else if (entryName.includes('node_modules')) {
+                    return `external/module.${format === 'es' ? 'js' : 'cjs'}`
+                }
+                // Keep other modules in places
+                return `${entryName}.${format === 'es' ? 'js' : 'cjs'}`;
+            },
+            // Change bundle formats to ES Modules and commonJS.
+            // UMD bundle will not work with preserveModules:true
+            formats: ['es', 'cjs'],
+        },
+        rollupOptions: {
+            // ...
+            output: {
+                // ...
+                preserveModules: true,
+            },
+        },
+    },
+}));
+
+```

@@ -181,8 +181,8 @@ importers:
         specifier: 6.2.7
         version: 6.2.7(@types/node@22.7.4)(yaml@2.5.0)
       vite-plugin-dts:
-        specifier: 4.5.3
-        version: 4.5.3(@types/node@22.7.4)(rollup@4.34.9)(typescript@5.8.2)(vite@6.2.7(@types/node@22.7.4)(yaml@2.5.0))
+        specifier: 4.5.4
+        version: 4.5.4(@types/node@22.7.4)(rollup@4.34.9)(typescript@5.8.2)(vite@6.2.7(@types/node@22.7.4)(yaml@2.5.0))
 
 packages:
 
@@ -5583,8 +5583,8 @@ packages:
     resolution: {integrity: sha512-/EH/sDgxU2eGxajKdwLCDmQ4FWq+kpi3uCmBGpw1xJtnAxEjlD8j8PEiGWpCIMIs3ciNAgH0d3TTJiUkYzyZjA==}
     engines: {node: '>=10.12.0'}
 
-  vite-plugin-dts@4.5.3:
-    resolution: {integrity: sha512-P64VnD00dR+e8S26ESoFELqc17+w7pKkwlBpgXteOljFyT0zDwD8hH4zXp49M/kciy//7ZbVXIwQCekBJjfWzA==}
+  vite-plugin-dts@4.5.4:
+    resolution: {integrity: sha512-d4sOM8M/8z7vRXHHq/ebbblfaxENjogAAekcfcDCCwAyvGqnPrc7f4NZbvItS+g4WTgerW0xDwSz5qz11JT3vg==}
     peerDependencies:
       typescript: '*'
       vite: '*'
@@ -9904,14 +9904,14 @@ snapshots:
     dependencies:
       '@tootallnate/once': 2.0.0
       agent-base: 6.0.2
-      debug: 4.3.7
+      debug: 4.4.0
     transitivePeerDependencies:
       - supports-color
 
   https-proxy-agent@5.0.1:
     dependencies:
       agent-base: 6.0.2
-      debug: 4.3.7
+      debug: 4.4.0
     transitivePeerDependencies:
       - supports-color
 
@@ -12356,7 +12356,7 @@ snapshots:
       '@types/istanbul-lib-coverage': 2.0.6
       convert-source-map: 2.0.0
 
-  vite-plugin-dts@4.5.3(@types/node@22.7.4)(rollup@4.34.9)(typescript@5.8.2)(vite@6.2.7(@types/node@22.7.4)(yaml@2.5.0)):
+  vite-plugin-dts@4.5.4(@types/node@22.7.4)(rollup@4.34.9)(typescript@5.8.2)(vite@6.2.7(@types/node@22.7.4)(yaml@2.5.0)):
     dependencies:
       '@microsoft/api-extractor': 7.51.1(@types/node@22.7.4)
       '@rollup/pluginutils': 5.1.4(rollup@4.34.9)

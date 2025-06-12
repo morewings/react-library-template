@@ -99,7 +99,7 @@
     "jest-environment-jsdom": "30.0.0",
     "lint-staged": "15.5.2",
     "npm-run-all2": "8.0.4",
-    "postcss": "8.5.4",
+    "postcss": "8.5.5",
     "postcss-preset-env": "10.2.3",
     "prettier": "3.5.3",
     "react": "19.1.0",

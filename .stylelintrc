@@ -15,7 +15,15 @@
     "at-rule-no-vendor-prefix": true,
     "selector-no-vendor-prefix": true,
     "max-nesting-depth": 3,
-    "selector-max-compound-selectors": 5
+    "selector-max-compound-selectors": 5,
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": [
+          "tailwind"
+        ]
+      }
+    ]
   },
   "plugins": [
     "stylelint-order"

@@ -109,8 +109,8 @@ importers:
         specifier: 0.12.0
         version: 0.12.0(eslint@9.28.0(jiti@1.21.7))(typescript@5.8.3)
       eslint-plugin-tailwindcss:
-        specifier: 3.17.5
-        version: 3.17.5(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@24.0.0)(typescript@5.8.3)))
+        specifier: 3.18.0
+        version: 3.18.0(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@24.0.0)(typescript@5.8.3)))
       generate-react-cli:
         specifier: 8.4.9
         version: 8.4.9
@@ -2704,8 +2704,8 @@ packages:
     peerDependencies:
       eslint: '>=8'
 
-  eslint-plugin-tailwindcss@3.17.5:
-    resolution: {integrity: sha512-8Mi7p7dm+mO1dHgRHHFdPu4RDTBk69Cn4P0B40vRQR+MrguUpwmKwhZy1kqYe3Km8/4nb+cyrCF+5SodOEmaow==}
+  eslint-plugin-tailwindcss@3.18.0:
+    resolution: {integrity: sha512-PQDU4ZMzFH0eb2DrfHPpbgo87Zgg2EXSMOj1NSfzdZm+aJzpuwGerfowMIaVehSREEa0idbf/eoNYAOHSJoDAQ==}
     engines: {node: '>=18.12.0'}
     peerDependencies:
       tailwindcss: ^3.4.0
@@ -8066,7 +8066,7 @@ snapshots:
       - supports-color
       - typescript
 
-  eslint-plugin-tailwindcss@3.17.5(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@24.0.0)(typescript@5.8.3))):
+  eslint-plugin-tailwindcss@3.18.0(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@24.0.0)(typescript@5.8.3))):
     dependencies:
       fast-glob: 3.3.3
       postcss: 8.5.5

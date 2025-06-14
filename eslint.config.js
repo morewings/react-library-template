@@ -1,4 +1,6 @@
 // @ts-check
+import {dirname} from 'path';
+import {fileURLToPath} from 'url';
 
 import eslint from '@eslint/js';
 import eslintTS from 'typescript-eslint';
@@ -39,6 +41,9 @@ export default [
         settings: {
             react: {
                 version: 'detect',
+            },
+            tailwindcss: {
+                config: dirname(fileURLToPath(import.meta.url)) + '/src/lib/index.css',
             },
         },
         plugins: {

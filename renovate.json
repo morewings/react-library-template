@@ -1,14 +1,19 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-      "config:recommended"
+    "config:recommended"
   ],
-  "schedule": ["before 4am on the first day of the month"],
+  "schedule": [
+    "before 4am on the first day of the month"
+  ],
   "hostRules": [
     {
       "matchHost": "api.github.com",
       "concurrentRequestLimit": 23
     }
   ],
-  "baseBranches": ["master", "tailwind"]
+  "baseBranchPatterns": [
+    "master",
+    "tailwind"
+  ]
 }

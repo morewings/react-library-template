@@ -1,4 +1,4 @@
-import hq from 'alias-hq';
+import {kitchen} from 'alias-kitchen';
 
 export default {
     preset: 'ts-jest',
@@ -8,7 +8,7 @@ export default {
         // process `*.tsx` files with `ts-jest`
     },
     moduleNameMapper: {
-        ...hq.get('jest'),
+        ...kitchen({recipe: 'jest'}),
         '\\.(gif|ttf|eot|svg|png|jpg)$': 'identity-obj-proxy',
         '\\.css$': 'identity-obj-proxy',
     },

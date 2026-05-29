@@ -19,19 +19,27 @@ export default defineConfig({
             // Could also be a dictionary or array of multiple entry points
             entry: resolve(__dirname, 'src/lib/index.ts'),
             name: 'Library name',
-            // the proper extensions will be added
-            fileName: 'index',
+            fileName: (format, entryName) => {
+                if (entryName === 'src/lib/index') {
+                    // Create entry file(s) inside the bundle
+                    return `index.${format === 'es' ? 'js' : 'cjs'}`;
+                } else if (entryName.includes('node_modules')) {
+                    // Organize external dependencies which included in the bundle
+                    return `external/module.${format === 'es' ? 'js' : 'cjs'}`;
+                }
+                // Keep other modules in places
+                return `${entryName}.${format === 'es' ? 'js' : 'cjs'}`;
+            },
+            // Change bundle formats to ES Modules and commonJS.
+            // UMD bundle will not work with preserveModules:true
+            formats: ['es', 'cjs'],
         },
         rollupOptions: {
             // make sure to externalize deps that shouldn't be bundled
             // into your library
             external: external(),
             output: {
-                // Provide global variables to use in the UMD build
-                // for externalized deps
-                globals: {
-                    react: 'React',
-                },
+                preserveModules: true,
             },
         },
     },

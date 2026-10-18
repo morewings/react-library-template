@@ -7,17 +7,16 @@ on:
   push:
     branches: [ master ]
 
+concurrency:
+  group: "merge-tasks-${{ github.head_ref || github.ref }}"
+  cancel-in-progress: true
+
 jobs:
   build-publish:
 
     runs-on: ubuntu-latest
 
     steps:
-      - name: Cancel Workflow Action
-        uses: styfle/cancel-workflow-action@0.12.1
-        with:
-          access_token: ${{ github.token }}
-
       - name: Checkout
         uses: actions/checkout@v6
 

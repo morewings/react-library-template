@@ -1,0 +1,8 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`lib > Counter > useLogic > renders 1`] = `
+{
+  "count": 0,
+  "incrementCount": [Function],
+}
+`;

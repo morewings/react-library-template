@@ -7,9 +7,55 @@ on:
   pull_request:
     branches: [ master ]
 
-jobs:
-  lint-test:
+concurrency:
+  group: "checks-${{ github.head_ref || github.ref }}"
+  cancel-in-progress: true
 
+jobs:
+  test:
+    name: 'Unit Tests'
+    runs-on: ubuntu-latest
+    container:
+      image: mcr.microsoft.com/playwright:v1.64.0-noble
+      options: --user 1001
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Read .nvmrc
+        run: echo "NVMRC=$(cat .nvmrc)" >> $GITHUB_ENV
+        id: nvm
+
+      - name: Use Node.js ${{ env.NVMRC }}
+        uses: actions/setup-node@v6
+        with:
+          node-version: ${{ env.NVMRC }}
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v6
+        with:
+          version: 10
+          run_install: false
+
+      - name: Get pnpm store directory
+        shell: bash
+        run: echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
+
+      - name: Setup pnpm cache
+        uses: actions/cache@v5
+        with:
+          path: ${{ env.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+
+      - name: Run test tasks
+        run: |
+          pnpm install
+          pnpm run test
+
+  lint:
+    name: 'Linting and Self-tests'
     runs-on: ubuntu-latest
 
     steps:
@@ -53,7 +99,6 @@ jobs:
           pnpm install
           pnpm run lint:code --quiet
           pnpm run lint:style --quiet
-          pnpm run test --silent
           pnpm run start:docs --smoke-test --quiet
           pnpm run build
           pnpm run generate:component Foo --dry-run

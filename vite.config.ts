@@ -17,7 +17,7 @@ export default defineConfig({
         sourcemap: true,
         lib: {
             // Could also be a dictionary or array of multiple entry points
-            entry: resolve(__dirname, 'src/lib/index.ts'),
+            entry: resolve(import.meta.dirname, 'src/lib/index.ts'),
             name: 'Library name',
             // the proper extensions will be added
             fileName: 'index',

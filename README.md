@@ -15,7 +15,7 @@ Forget about the tedious setup – we've got you covered. Focus on writing your 
 - **TypeScript & JavaScript**: Write your code in the language you prefer.
 - **Blazing fast**: **pnpm** for speedy package management and **Vite** for lightning-fast builds.
 - **Husky** enforces pre-commit hooks, **Eslint** and **Stylelint** will keep your code tidy and consistent.
-- **Jest** and **react-testing-library** help you write robust tests.
+- **Vitest** runs unit tests in real headless browser environment. No more jsdom.
 - **Storybook** lets you create interactive demos and docs for your components.
 - **Optional Tailwind CSS**: If you're into it, you can easily enable Tailwind CSS for styling.
 
@@ -29,6 +29,7 @@ This template is your starting point for building high-quality React libraries. 
 
 1. Install **Node** >= 20.x.
 2. Install **pnpm**. E.g. `corepack prepare pnpm@latest --activate`.
+3. Install vitest browsers to be able to run tests: `npx playwright install`
 
 
 ### Installation

@@ -5,7 +5,7 @@ name: Node.js CI
 
 on:
   pull_request:
-    branches: [ master ]
+    branches: ["master", "tailwind"]
 
 concurrency:
   group: "checks-${{ github.head_ref || github.ref }}"

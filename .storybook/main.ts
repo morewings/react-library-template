@@ -4,18 +4,26 @@ import {withoutVitePlugins} from '@storybook/builder-vite';
 const config: StorybookConfig = {
     stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
     addons: ['@storybook/addon-links', '@storybook/addon-docs'],
+
     framework: {
         name: '@storybook/react-vite',
         options: {},
     },
+
     async viteFinal(config) {
         return {
             ...config,
             plugins: await withoutVitePlugins(config.plugins, ['vite:dts']),
         };
     },
+
     typescript: {
         reactDocgen: 'react-docgen-typescript',
+    },
+
+    features: {
+        experimentalReview: true,
+        experimentalDocgenServer: true,
     },
 };
 export default config;

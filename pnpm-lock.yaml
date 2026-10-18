@@ -97,8 +97,8 @@ importers:
         specifier: 10.6.2
         version: 10.6.2(eslint@9.39.5(jiti@1.21.7)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.9.3)
       eslint-plugin-tailwindcss:
-        specifier: 3.18.2
-        version: 3.18.2(tailwindcss@3.4.19(ts-node@10.9.2(@types/node@24.0.0)(typescript@5.9.3)))
+        specifier: 3.18.3
+        version: 3.18.3(tailwindcss@3.4.19(ts-node@10.9.2(@types/node@24.0.0)(typescript@5.9.3)))
       generate-react-cli:
         specifier: 8.4.9
         version: 8.4.9
@@ -2860,6 +2860,10 @@ packages:
     resolution: {integrity: sha512-i6UzDscO/XfAcNYD75CfICkmfLedpyPDdozrLMmQc5ORaQcdMoc21OnlEylMIqI7U8eniKrPMxxtj8k0vhmJhA==}
     engines: {node: '>=14'}
 
+  enhanced-resolve@5.26.0:
+    resolution: {integrity: sha512-9vhedylFonb2YGogzUKX6+Ja72gOJbN1QHAqdrvqLwhdl/QWbKopzoUC9EbQNVsAns/bx/4uyqalrQAoy1IByw==}
+    engines: {node: '>=10.13.0'}
+
   entities@6.0.1:
     resolution: {integrity: sha512-aN97NXWF6AWBTahfVOIrB/NShkzi5H7F9r1s9mD3cDj4Ko5f2qhhVoYMibXF7GlLveb/D2ioWay8lxI97Ven3g==}
     engines: {node: '>=0.12'}
@@ -3008,11 +3012,11 @@ packages:
     peerDependencies:
       eslint: '>=8'
 
-  eslint-plugin-tailwindcss@3.18.2:
-    resolution: {integrity: sha512-QbkMLDC/OkkjFQ1iz/5jkMdHfiMu/uwujUHLAJK5iwNHD8RTxVTlsUezE0toTZ6VhybNBsk+gYGPDq2agfeRNA==}
+  eslint-plugin-tailwindcss@3.18.3:
+    resolution: {integrity: sha512-lqjNX7mt1Ip2qR236hvhbZ9ff2TFLUWou+tBHz82SA1nWFzOZSoEOI+9UBZmuf2977r2MMp9/y3/broyz8AYig==}
     engines: {node: '>=18.12.0'}
     peerDependencies:
-      tailwindcss: ^3.4.0
+      tailwindcss: ^3.4.0 || ^4.0.0
 
   eslint-scope@8.4.0:
     resolution: {integrity: sha512-sNXOfKCn74rt8RICKMvJS7XKV/Xk9kA7DyJr8mJik3S7Cwgy3qlkkmyS2uQB3jiJg6VNdZd/pDBJu0nvG2NlTg==}
@@ -3758,6 +3762,10 @@ packages:
 
   jiti@1.21.7:
     resolution: {integrity: sha512-/imKNG4EbWNrVjoNC/1H5/9GFy+tqjGBHCaSsN+P2RnPqjsLmv6UD3Ej+Kj8nBWaRAwyk7kK5ZUc+OEatnTR3A==}
+    hasBin: true
+
+  jiti@2.7.0:
+    resolution: {integrity: sha512-AC/7JofJvZGrrneWNaEnJeOLUx+JlGt7tNa0wZiRPT4MY1wmfKjt2+6O2p2uz2+skll8OZZmJMNqeke7kKbNgQ==}
     hasBin: true
 
   jju@1.4.0:
@@ -5006,10 +5014,19 @@ packages:
     resolution: {integrity: sha512-9kY+CygyYM6j02t5YFHbNz2FN5QmYGv9zAjVp4lCDjlCw7amdckXlEt/bjMhUIfj4ThGRE4gCUH5+yGnNuPo5A==}
     engines: {node: '>=10.0.0'}
 
+  tailwind-api-utils@1.0.3:
+    resolution: {integrity: sha512-KpzUHkH1ug1sq4394SLJX38ZtpeTiqQ1RVyFTTSY2XuHsNSTWUkRo108KmyyrMWdDbQrLYkSHaNKj/a3bmA4sQ==}
+    peerDependencies:
+      tailwindcss: ^3.3.0 || ^4.0.0 || ^4.0.0-beta
+
   tailwindcss@3.4.19:
     resolution: {integrity: sha512-3ofp+LL8E+pK/JuPLPggVAIaEuhvIz4qNcf3nA1Xn2o/7fb7s/TYpHhwGDv1ZU3PkBluUVaF8PyCHcm48cKLWQ==}
     engines: {node: '>=14.0.0'}
     hasBin: true
+
+  tapable@2.3.3:
+    resolution: {integrity: sha512-uxc/zpqFg6x7C8vOE7lh6Lbda8eEL9zmVm/PLeTPBRhh1xCgdWaQ+J1CUieGpIfm2HdtsUpRv+HshiasBMcc6A==}
+    engines: {node: '>=6'}
 
   test-exclude@7.0.2:
     resolution: {integrity: sha512-u9E6A+ZDYdp7a4WnarkXPZOx8Ilz46+kby6p1yZ8zsGTz9gYa6FIS7lj2oezzNKmtdyyJNNmmXDppga5GB7kSw==}
@@ -8161,6 +8178,11 @@ snapshots:
 
   empathic@2.0.0: {}
 
+  enhanced-resolve@5.26.0:
+    dependencies:
+      graceful-fs: 4.2.11
+      tapable: 2.3.3
+
   entities@6.0.1:
     optional: true
 
@@ -8421,10 +8443,12 @@ snapshots:
       - supports-color
       - typescript
 
-  eslint-plugin-tailwindcss@3.18.2(tailwindcss@3.4.19(ts-node@10.9.2(@types/node@24.0.0)(typescript@5.9.3))):
+  eslint-plugin-tailwindcss@3.18.3(tailwindcss@3.4.19(ts-node@10.9.2(@types/node@24.0.0)(typescript@5.9.3))):
     dependencies:
       fast-glob: 3.3.3
       postcss: 8.5.30
+      synckit: 0.11.13
+      tailwind-api-utils: 1.0.3(tailwindcss@3.4.19(ts-node@10.9.2(@types/node@24.0.0)(typescript@5.9.3)))
       tailwindcss: 3.4.19(ts-node@10.9.2(@types/node@24.0.0)(typescript@5.9.3))
 
   eslint-scope@8.4.0:
@@ -9408,6 +9432,8 @@ snapshots:
       - ts-node
 
   jiti@1.21.7: {}
+
+  jiti@2.7.0: {}
 
   jju@1.4.0:
     optional: true
@@ -10856,6 +10882,13 @@ snapshots:
       string-width: 4.2.3
       strip-ansi: 6.0.1
 
+  tailwind-api-utils@1.0.3(tailwindcss@3.4.19(ts-node@10.9.2(@types/node@24.0.0)(typescript@5.9.3))):
+    dependencies:
+      enhanced-resolve: 5.26.0
+      jiti: 2.7.0
+      local-pkg: 1.1.1
+      tailwindcss: 3.4.19(ts-node@10.9.2(@types/node@24.0.0)(typescript@5.9.3))
+
   tailwindcss@3.4.19(ts-node@10.9.2(@types/node@24.0.0)(typescript@5.9.3)):
     dependencies:
       '@alloc/quick-lru': 5.3.0
@@ -10882,6 +10915,8 @@ snapshots:
       sucrase: 3.35.1
     transitivePeerDependencies:
       - ts-node
+
+  tapable@2.3.3: {}
 
   test-exclude@7.0.2:
     dependencies:

@@ -1,49 +1,22 @@
-import {render, fireEvent} from '@testing-library/react';
+import {render} from 'vitest-browser-react';
+import {userEvent} from 'vitest/browser';
 
 import {Counter} from './Counter';
 
-describe('lib > Counter', () => {
-    /**
-     * Jest hook which runs before each test,
-     * @see https://jestjs.io/docs/en/api#beforeeachfn-timeout
-     */
-    beforeEach(() => {});
+const user = userEvent.setup();
 
-    it('renders without crashing', () => {
-        /**
-         * `asFragment`:
-         * @see https://testing-library.com/docs/react-testing-library/api#asfragment
-         * `baseElement`:
-         * @see https://testing-library.com/docs/react-testing-library/api#baseelement
-         */
-        const {asFragment, baseElement} = render(<Counter initialValue={6} />);
-
-        /**
-         * Basic snapshot test to make sure, that rendered component
-         * matches expected footprint.
-         */
-        expect(asFragment()).toMatchSnapshot();
-
-        /** More precise test for counter value */
-        expect(baseElement.querySelector('strong')!.textContent).toBe('6'); // 6 is value we expect, we need to convert Number to String, because HTMLElement textContent method returns string value
+describe('Container', () => {
+    test('renders without crashing', async () => {
+        const value = 6;
+        const {getByText} = await render(<Counter initialValue={6} />);
+        await expect.element(getByText(value.toString())).toBeInTheDocument();
     });
+    test('changes counter value on button click', async () => {
+        const initialValue = 1;
+        const {getByText, getByRole} = await render(<Counter initialValue={initialValue} />);
 
-    it('changes counter value on button click', () => {
-        const value = 1;
+        await user.click(getByRole('button'));
 
-        /**
-         * `getByRole`:
-         * @see https://testing-library.com/docs/dom-testing-library/api-queries#byrole
-         */
-        const {getByRole, baseElement} = render(<Counter initialValue={value} />);
-
-        /**
-         * Search for the button and make testing library click on it
-         * @see https://testing-library.com/docs/react-testing-library/cheatsheet#events
-         */
-        fireEvent.click(getByRole('button'));
-
-        /** Check if counter was incremented  */
-        expect(baseElement.querySelector('strong')!.textContent).toBe(`${value + 1}`);
+        expect(getByText(`${initialValue + 1}`)).toBeInTheDocument();
     });
 });

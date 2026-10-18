@@ -1,12 +1,15 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`lib > Counter renders without crashing 1`] = `
+exports[`lib > TemplateName > renders without crashing 1`] = `
 <DocumentFragment>
   <div>
-    <h2>
+    <h2
+      class="_header_prv95_10"
+    >
       Counter
     </h2>
     <button
+      class="_button_prv95_16"
       type="button"
     >
       Increment by one

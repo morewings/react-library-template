@@ -98,7 +98,7 @@ importers:
         version: 10.6.2(eslint@9.39.5(jiti@1.21.7)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.9.3)
       eslint-plugin-tailwindcss:
         specifier: 3.18.2
-        version: 3.18.2(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@24.0.0)(typescript@5.9.3)))
+        version: 3.18.2(tailwindcss@3.4.19(ts-node@10.9.2(@types/node@24.0.0)(typescript@5.9.3)))
       generate-react-cli:
         specifier: 8.4.9
         version: 8.4.9
@@ -151,8 +151,8 @@ importers:
         specifier: 5.0.3
         version: 5.0.3(prettier@3.9.10)(stylelint@17.16.0(supports-color@10.2.2)(typescript@5.9.3))
       tailwindcss:
-        specifier: 3.4.17
-        version: 3.4.17(ts-node@10.9.2(@types/node@24.0.0)(typescript@5.9.3))
+        specifier: 3.4.19
+        version: 3.4.19(ts-node@10.9.2(@types/node@24.0.0)(typescript@5.9.3))
       ts-jest:
         specifier: 29.4.0
         version: 29.4.0(@babel/core@7.28.0(supports-color@10.2.2))(@jest/transform@30.5.2(supports-color@10.2.2))(@jest/types@30.5.1)(babel-jest@30.5.2(@babel/core@7.28.0(supports-color@10.2.2))(supports-color@10.2.2))(esbuild@0.27.7)(jest-util@30.5.1)(jest@30.5.2(@types/node@24.0.0)(supports-color@10.2.2)(ts-node@10.9.2(@types/node@24.0.0)(typescript@5.9.3)))(typescript@5.9.3)
@@ -5006,8 +5006,8 @@ packages:
     resolution: {integrity: sha512-9kY+CygyYM6j02t5YFHbNz2FN5QmYGv9zAjVp4lCDjlCw7amdckXlEt/bjMhUIfj4ThGRE4gCUH5+yGnNuPo5A==}
     engines: {node: '>=10.0.0'}
 
-  tailwindcss@3.4.17:
-    resolution: {integrity: sha512-w33E2aCvSDP0tW9RZuNXadXlkHXqFzSkQew/aIa2i/Sj8fThxwovwlXHSPXTbAHwEIhBFXAedUhP2tueAKP8Og==}
+  tailwindcss@3.4.19:
+    resolution: {integrity: sha512-3ofp+LL8E+pK/JuPLPggVAIaEuhvIz4qNcf3nA1Xn2o/7fb7s/TYpHhwGDv1ZU3PkBluUVaF8PyCHcm48cKLWQ==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -8421,11 +8421,11 @@ snapshots:
       - supports-color
       - typescript
 
-  eslint-plugin-tailwindcss@3.18.2(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@24.0.0)(typescript@5.9.3))):
+  eslint-plugin-tailwindcss@3.18.2(tailwindcss@3.4.19(ts-node@10.9.2(@types/node@24.0.0)(typescript@5.9.3))):
     dependencies:
       fast-glob: 3.3.3
       postcss: 8.5.30
-      tailwindcss: 3.4.17(ts-node@10.9.2(@types/node@24.0.0)(typescript@5.9.3))
+      tailwindcss: 3.4.19(ts-node@10.9.2(@types/node@24.0.0)(typescript@5.9.3))
 
   eslint-scope@8.4.0:
     dependencies:
@@ -10856,7 +10856,7 @@ snapshots:
       string-width: 4.2.3
       strip-ansi: 6.0.1
 
-  tailwindcss@3.4.17(ts-node@10.9.2(@types/node@24.0.0)(typescript@5.9.3)):
+  tailwindcss@3.4.19(ts-node@10.9.2(@types/node@24.0.0)(typescript@5.9.3)):
     dependencies:
       '@alloc/quick-lru': 5.3.0
       arg: 5.0.2
